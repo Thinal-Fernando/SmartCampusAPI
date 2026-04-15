@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.smartcampusapi.store;
-import model.Room;
-import model.Sensor;
-import model.SensorReading;
+import com.smartcampusapi.model.Room;
+import com.smartcampusapi.model.Sensor;
+import com.smartcampusapi.model.SensorReading;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
