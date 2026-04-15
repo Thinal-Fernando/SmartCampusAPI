@@ -7,7 +7,8 @@ package com.smartcampusapi.resource;
 
 import com.smartcampusapi.model.Room;
 import com.smartcampusapi.store.DataStore;
-
+import com.smartcampusapi.exceptions.DataNotFoundException;
+import com.smartcampusapi.exceptions.RoomNotEmptyException;
 
 
 import javax.ws.rs.*;
@@ -82,7 +83,7 @@ public class SensorRoomResource {
     public Room getRoomById(@PathParam("roomId") String roomId){
         Room room = DataStore.rooms.get(roomId);
         if (room == null) {
-            throw new NotFoundException("Room not found: " + roomId);        }
+            throw new DataNotFoundException("Room not found: " + roomId);        }
         return room;
     }
     
@@ -91,10 +92,10 @@ public class SensorRoomResource {
     public Response deleteRoom(@PathParam("roomId") String roomId) {
         Room room = DataStore.rooms.get(roomId);
         if (room == null) {
-            throw new NotFoundException("Room not found: " + roomId);
+            throw new DataNotFoundException("Room not found: " + roomId);
         }
         if (room.getSensorIds() != null && !room.getSensorIds().isEmpty()) {
-            throw new NotFoundException( "Cannot delete room '" + roomId + "': it still has " +
+            throw new RoomNotEmptyException( "Cannot delete room '" + roomId + "': it still has " +
                     room.getSensorIds().size() + " sensor(s) assigned.");
         }
         DataStore.rooms.remove(roomId);
