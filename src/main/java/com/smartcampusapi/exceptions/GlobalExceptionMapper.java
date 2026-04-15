@@ -11,9 +11,11 @@ import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 /**
- *
- * @author User
+ * Author - Thinal Fernando
+ * UOW NO - W2149585
+ * IIT NO - 20242112
  */
+
 @Provider
 public class GlobalExceptionMapper implements ExceptionMapper<Throwable> {
     @Override
