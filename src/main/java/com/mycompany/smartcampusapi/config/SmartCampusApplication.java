@@ -5,8 +5,9 @@
 package com.mycompany.smartcampusapi.config;
 
 /**
- *
- * @author User
+ * Author - Thinal Fernando
+ * UOW NO - W2149585
+ * IIT NO - 20242112
  */
 
 import javax.ws.rs.ApplicationPath;
