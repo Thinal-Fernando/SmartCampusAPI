@@ -59,9 +59,9 @@ Base API URL - `http://localhost:8080/SmartCampusAPI/api/v1`
 
 ### Project Structure
 ```
-smart-campus-api/
+SmartCampusAPI/
 ├── pom.xml
-└── src/main/java/com/smartcampusai/
+└── src/main/java/com/smartcampusapi/
     ├── config/
     │   └── SmartCampusApplication.java
     │                        
@@ -99,16 +99,20 @@ smart-campus-api/
 <br>
 
 ## 2. How to Build & Run the Project
-1. Download the zip file of the code and unzip it
-2. Open Apache NetBeans
-3. Select File → Open Project
-4. Choose the SmartCampusAPI project
-5. Ensure Apache Tomcat server is configured and running
-6. Right click the project
-7. select -> Clean and Build
-8. Then select -> Run <br>
+1. Clone the repository using:
+   ```git clone https://github.com/Thinal-Fernando/SmartCampusAPI.git```
+2. Open in Apache NetBeans
+   * File -> Open Project
+   * Navigate to the cloned folder -> Click Open
+3. Ensure Apache Tomcat server is configured and running
+4. Build the Project
+   * Right-click the project
+   * select -> Clean and Bui
+   * Then select -> Run <br>
 
-The API server will start and be available on localhost:8080 (by default)
+The API will start at:
+
+`http://localhost:8080/SmartCampusAPI/api/v1`  
 
 <hr>
 
