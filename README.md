@@ -107,7 +107,7 @@ SmartCampusAPI/
 3. Ensure Apache Tomcat server is configured and running
 4. Build the Project
    * Right-click the project
-   * select -> Clean and Bui
+   * select -> Clean and Build
    * Then select -> Run <br>
 
 The API will start at:
